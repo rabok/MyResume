@@ -1590,24 +1590,52 @@ body {
 .partner-logos img:hover {
   opacity: 1;
 }
-
-
 /* Styles for logo positioning */
-.logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start; /* For top alignment */
-  padding: 20px 0; /* Add padding for spacing */
-}
+
 
 .logo-image {
-  max-width: 200%;
-  max-height: 200%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Styles for logo anchor positioning */
+.logo-anchor {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999; /* Ensure the logo is above other content */
+  background-color: rgba(255, 255, 255, 0.8); /* Add a background to the anchor */
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
 }
 
 /* Media query for mobile view */
 @media (max-width: 767px) {
   .logo-container {
-      align-items: center; /* Center alignment for mobile view */
+    height: auto; /* Reset height for mobile view */
+  }
+
+  .logo-anchor {
+    display: none; /* Hide the anchor on mobile view */
   }
 }
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.tagline {
+  font-weight: bold;
+  color: #555;
+  font-size: 14px;
+}
+
