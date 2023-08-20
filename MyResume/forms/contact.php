@@ -1,15 +1,15 @@
 <?php
 /**
  * Requires the "PHP Email Form" library
- * The "PHP Email Form" library should be uploaded to: vendor/php-email-form/php-email-form.php
+ * The "PHP Email Form" library should be uploaded to: ../vendor/php-email-form/php-email-form.php
  * For more info and help: https://bootstrapmade.com/php-email-form/
  */
 
 // Replace with your receiving email address
-$receiving_email_address = 'flynnduerrel@gmail.com';
+$receiving_email_address = 'njerimarion7@gmail.com';
 
 // Check if the PHP Email Form library file exists
-if (file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php')) {
+if (file_exists($php_email_form = '../vendor/php-email-form/php-email-form.php')) {
     // Include the library
     include($php_email_form);
 } else {
@@ -28,12 +28,13 @@ $contact->from_email = $_POST['email'];
 $contact->subject = $_POST['subject'];
 
 // Uncomment below code if you want to use SMTP to send emails.
-// $contact->smtp = array(
-//     'host' => 'smtp.example.com',
-//     'username' => 'your_username',
-//     'password' => 'your_password',
-//     'port' => '587'
-// );
+$contact->smtp = array(
+    'host' => 'mail.themvasolutions.com',
+    'username' => 'hello@themvasolutions.com',
+    'password' => 'Use the email account’s password',
+    'port' => '465',
+    'encryption' => 'ssl'
+);
 
 // Add form data to the email message
 $contact->add_message($_POST['name'], 'From');
