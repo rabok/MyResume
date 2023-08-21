@@ -274,3 +274,5 @@ window.addEventListener("scroll", function() {
   const scrollPosition = window.scrollY;
   logoContainer.style.backgroundPositionY = -scrollPosition * 0.5 + "px";
 });
+
+

@@ -367,6 +367,32 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    $(document).ready(function() {
+        $(".php-email-form").submit(function(e) {
+            e.preventDefault(); // Prevent the default form submission
+            
+            // Perform an AJAX request to submit the form data
+            $.ajax({
+                type: "POST",
+                url: "subscribe.php", // Use the correct path to the PHP script
+                data: $(this).serialize(),
+                success: function(response) {
+                    // Show the appropriate message based on the response
+                    $(".loading").hide();
+                    $(".error-message").hide();
+                    $(".sent-message").text(response).show();
+                },
+                error: function() {
+                    $(".loading").hide();
+                    $(".sent-message").hide();
+                    $(".error-message").text("An error occurred. Please try again later.").show();
+                }
+            });
+        });
+    });
+    </script>
+    
 
 </body>
 
