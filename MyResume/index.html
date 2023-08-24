@@ -286,43 +286,31 @@
     
     <!-- End Services Section -->
 <!-- ======= Contact Section ======= -->
-<section id="contact" class="contact">
-  <div class="container" data-aos="fade-up">
-
-    <div class="section-title">
-      <h2>Subscribe</h2>
-    </div>
-
-    <div class="row mt-1">
-
-      <div class="col-lg-4">
-        <div class="info">
-          <div class="address">
-            <i class="bi bi-envelope"></i>
-            <h4>Email:</h4>
-            <p>hello@themvasolutions.info</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-8 mt-5 mt-lg-0">
-        <form action="forms/subscribe.php" method="post" role="form" class="php-email-form">
-          <div class="form-group mt-3">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-          </div>
-          <div class="my-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">You've been subscribed successfully. Thank you!</div>
-          </div>
-          <div class="text-center"><button type="submit">Subscribe</button></div>
-        </form>
-      </div>
-
-    </div>
-
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Feel free to reach out to us using the form below or through our contact information.</p>
+  
+  <form action="forms/submit-contact.php" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="John Doe" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="johndoe@example.com" required>
+    
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" placeholder="Your message here..." required></textarea>
+    
+    <button type="submit">Send</button>
+  </form>
+  
+  <div class="contact-info">
+    <p>Phone:+254 701 484422 </p>
+    <p>Email: <a href="hello@mvasolutions.com">hello@mvasolutions.com</a></p>  
   </div>
+ 
+  <!-- Embedded map code could go here -->
 </section>
+
 <!-- End Contact Section -->
 
 
