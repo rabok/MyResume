@@ -5,14 +5,14 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>MVAsolutions</title>
-  <meta name="description" content="Welcome to MVA Solutions, your premier online virtual assistance platform. We provide top-notch virtual assistant services to help streamline your business operations and increase productivity. Our team of skilled professionals is ready to assist you with tasks ranging from administrative support to social media management. Partner with us for efficient and reliable virtual assistance solutions.">
-<meta name="keywords" content="MVA Solutions, online virtual assistance, virtual assistant services, business support, administrative tasks, productivity, remote assistance, professional assistance">
+  <title>MVA Solutions</title>
+  <meta name="description" content="Elevate your business with MVA Solutions - your ultimate online virtual assistance destination. Discover top-tier virtual assistant services meticulously designed to streamline operations and amplify productivity. Our team of proficient professionals stands ready to provide comprehensive support, ranging from administrative tasks to adept social media management. Join forces with us for unparalleled virtual assistance solutions that redefine efficiency and reliability.">
+<meta name="keywords" content="MVA Solutions, online virtual assistance, virtual assistant services, streamline business operations, administrative support, social media management, boost productivity, remote professional assistance">
 
 
   <!-- Favicons -->
   <link href="assets/img/logomva.jpg" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/logomva.jpg" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -32,7 +32,7 @@
 
 <body>
   <div class="logo" style="text-align: center;">
-  <img src="assets/img/mvalogo.png" alt="Logo" style="max-width: 100%; max-height: 100%; margin: 0 auto;">
+  <img src="assets/img/mva_logo-removebg-preview.png" alt="Logo" style="max-width: 100%; max-height: 100%; margin: 0 auto;">
   <p style="margin-top: 10px; font-weight: bold;">Your Efficiency Partner</p>
 </div>
   <header id="header" class="d-flex flex-column justify-content-center">
@@ -289,8 +289,7 @@
 <section id="contact">
   <h2>Contact Us</h2>
   <p>Feel free to reach out to us using the form below or through our contact information.</p>
-  
-  <form action="forms/submit-contact.php" method="post">
+  <form action="https://formsubmit.co/hello@themvasolutions.com" method="post">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" placeholder="John Doe" required>
     
@@ -300,13 +299,19 @@
     <label for="message">Message:</label>
     <textarea id="message" name="message" rows="4" placeholder="Your message here..." required></textarea>
     
+    <!-- Include FormSubmit input fields -->
+    <input type="hidden" name="_next" value="https://www.themvasolution.com/thanks.html">
+    <input type="hidden" name="_autoresponse" value="Thank you for contacting us! We'll get back to you shortly.">
+    
     <button type="submit">Send</button>
   </form>
   
   <div class="contact-info">
     <p>Phone:+254 701 484422 </p>
-    <p>Email: <a href="hello@mvasolutions.com">hello@mvasolutions.com</a></p>  
+    <p>Email: <a href="https://themvasolution.com/submit-contact.php">hello@mvasolutions.com</a></p>  
   </div>
+</section>
+
  
   <!-- Embedded map code could go here -->
 </section>
