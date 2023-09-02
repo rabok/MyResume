@@ -482,7 +482,7 @@ section {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #45505b;
+  color: #0000;
 }
 
 .skills .progress .skill .val {
@@ -509,7 +509,7 @@ section {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #45505b;
+  color: #0000;
 }
 
 .resume .resume-item {
@@ -587,7 +587,7 @@ section {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #272829;
+  color: #0000;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
@@ -606,7 +606,7 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  background: rgba(69, 80, 91, 0.8);
+  background: #0000;
 }
 
 .portfolio .portfolio-wrap::before {
@@ -668,12 +668,12 @@ section {
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;
-  color: #45505b;
+  color: #0000;
   font-weight: 600;
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
-  color: #45505b;
+  color: #0000;
   font-size: 14px;
   text-transform: uppercase;
   padding: 0;
@@ -686,7 +686,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
-  color: #45505b;
+  color: #0000;
   margin: 0 2px;
   font-size: 28px;
   display: inline-block;
@@ -830,7 +830,7 @@ section {
 }
 
 .services .icon-box h4 a {
-  color: #45505b;
+  color: #000;
   transition: ease-in-out 0.3s;
 }
 
@@ -944,12 +944,12 @@ section {
   font-size: 20px;
   font-weight: bold;
   margin: 10px 0 5px 0;
-  color: #111;
+  color: #000;
 }
 
 .testimonials .testimonial-item h4 {
   font-size: 14px;
-  color: #999;
+  color: #000;
   margin: 0 0 15px 0;
 }
 
@@ -1027,14 +1027,14 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #45505b;
+  color: #000;
 }
 
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #728394;
+  color: #000;
 }
 
 .contact .info .email,
@@ -1420,7 +1420,7 @@ body {
   border-radius: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 60px 0;
-  color: #333; /* Text color for the main content */
+  color: #000; /* Text color for the main content */
 }
 
 .section-title {
@@ -1661,8 +1661,7 @@ textarea {
   border: none;
   background: #AA5FFF;
   border-radius: 15px;
-  box-shadow: inset 8px 8px 15px rgba(163, 177, 198, 0.2),
-              inset -8px -8px 15px rgba(255, 255, 255, 0.5);
+  box-shadow: black;
   margin-bottom: 20px;
 }
 
@@ -1674,8 +1673,7 @@ button[type="submit"] {
   padding: 15px 25px;
   border-radius: 15px;
   cursor: pointer;
-  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.1),
-              -8px -8px 15px rgba(255, 255, 255, 0.5);
+  box-shadow: black;
 }
 
 /* Style contact information */
@@ -1684,8 +1682,7 @@ button[type="submit"] {
   padding: 20px;
   background: #f0f0f0;
   border-radius: 20px;
-  box-shadow: 10px 10px 20px rgba(163, 177, 198, 0.7),
-              -10px -10px 20px rgba(255, 255, 255, 0.5);
+  box-shadow: black;
 }
 
 .social-links {
