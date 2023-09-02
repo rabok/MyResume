@@ -1700,3 +1700,22 @@ button[type="submit"] {
 a:hover {
   text-decoration: underline;
 }
+
+
+
+.logo {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh; /* Adjust this value as needed to center vertically within the viewport */
+}
+
+.logo-container {
+  text-align: center;
+}
+.logo p {
+  font-size: 18px; /* Adjust the font size as needed */
+  font-weight: bold; /* Make the text bold */
+  margin-top: 10px; /* Add some space between the logo and text */
+}
